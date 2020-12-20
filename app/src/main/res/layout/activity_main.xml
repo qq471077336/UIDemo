@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="5dp"
+    android:background="@mipmap/huge_main"
     tools:context=".MainActivity">
 
     <Button
@@ -12,5 +13,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="流式布局"/>
+
+    <Button
+        android:id="@+id/btn_skin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text="插件化换肤"/>
+
 
 </LinearLayout>
