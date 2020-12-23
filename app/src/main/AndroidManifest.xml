@@ -10,7 +10,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.UIDemo">
-        <activity android:name=".skin.SkinActivity"></activity>
+        <activity android:name=".nested.NestedActivity"></activity>
+        <activity android:name=".skin.SkinActivity" />
         <activity android:name=".flow.FlowActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>

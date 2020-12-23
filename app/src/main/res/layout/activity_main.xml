@@ -21,5 +21,12 @@
         android:layout_marginLeft="5dp"
         android:text="插件化换肤"/>
 
+    <Button
+        android:id="@+id/btn_nested"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text="二级嵌套"/>
+
 
 </LinearLayout>

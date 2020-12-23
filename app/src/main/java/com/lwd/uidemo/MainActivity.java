@@ -9,6 +9,7 @@ import android.widget.Button;
 
 import com.lwd.uidemo.flow.FlowActivity;
 import com.lwd.uidemo.flow.FlowLayout;
+import com.lwd.uidemo.nested.NestedActivity;
 import com.lwd.uidemo.skin.SkinActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -20,6 +21,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         findViewById(R.id.btn_flow).setOnClickListener(this);
         findViewById(R.id.btn_skin).setOnClickListener(this);
+        findViewById(R.id.btn_nested).setOnClickListener(this);
     }
 
     @Override
@@ -30,6 +32,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btn_skin:
                 startActivity(new Intent(this, SkinActivity.class));
+                break;
+            case R.id.btn_nested:
+                startActivity(new Intent(this, NestedActivity.class));
                 break;
         }
     }
