@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.lwd.uidemo.fish.FishActivity;
 import com.lwd.uidemo.flow.FlowActivity;
 import com.lwd.uidemo.flow.FlowLayout;
 import com.lwd.uidemo.nested.NestedActivity;
@@ -22,6 +23,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.btn_flow).setOnClickListener(this);
         findViewById(R.id.btn_skin).setOnClickListener(this);
         findViewById(R.id.btn_nested).setOnClickListener(this);
+        findViewById(R.id.btn_fish).setOnClickListener(this);
     }
 
     @Override
@@ -35,6 +37,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btn_nested:
                 startActivity(new Intent(this, NestedActivity.class));
+                break;
+            case R.id.btn_fish:
+                startActivity(new Intent(this, FishActivity.class));
                 break;
         }
     }
