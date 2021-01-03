@@ -4,36 +4,57 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="5dp"
     android:background="@mipmap/huge_main"
+    android:orientation="vertical"
+    android:padding="5dp"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/btn_flow"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="流式布局"/>
+        android:orientation="horizontal"
+        android:padding="5dp">
 
-    <Button
-        android:id="@+id/btn_skin"
-        android:layout_width="wrap_content"
+        <Button
+            android:id="@+id/btn_flow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="流式布局" />
+
+        <Button
+            android:id="@+id/btn_skin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="插件化换肤" />
+
+        <Button
+            android:id="@+id/btn_nested"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="二级嵌套" />
+
+        <Button
+            android:id="@+id/btn_fish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="锦鲤" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="5dp"
-        android:text="插件化换肤"/>
+        android:orientation="horizontal"
+        android:padding="5dp">
 
-    <Button
-        android:id="@+id/btn_nested"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="5dp"
-        android:text="二级嵌套"/>
-
-    <Button
-        android:id="@+id/btn_fish"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="5dp"
-        android:text="锦鲤"/>
-
+        <Button
+            android:id="@+id/btn_sticky"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="吸顶" />
+    </LinearLayout>
 
 </LinearLayout>
