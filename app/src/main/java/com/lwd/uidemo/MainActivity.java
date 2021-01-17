@@ -14,6 +14,7 @@ import com.lwd.uidemo.flow.FlowLayout;
 import com.lwd.uidemo.nested.NestedActivity;
 import com.lwd.uidemo.skin.SkinActivity;
 import com.lwd.uidemo.stickyheader.StickyHeaderActivity;
+import com.lwd.uidemo.text.ColorChangeTextViewActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -28,6 +29,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.btn_fish).setOnClickListener(this);
         findViewById(R.id.btn_sticky).setOnClickListener(this);
         findViewById(R.id.btn_card).setOnClickListener(this);
+        findViewById(R.id.btn_color_change).setOnClickListener(this);
     }
 
     @Override
@@ -50,6 +52,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btn_card:
                 startActivity(new Intent(this, CardSlideActivity.class));
+                break;
+            case R.id.btn_color_change:
+                startActivity(new Intent(this, ColorChangeTextViewActivity.class));
                 break;
         }
     }

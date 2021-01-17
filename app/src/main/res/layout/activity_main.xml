@@ -61,6 +61,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="探探" />
+
+        <Button
+            android:id="@+id/btn_color_change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="变色" />
     </LinearLayout>
 
 </LinearLayout>

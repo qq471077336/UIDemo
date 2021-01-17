@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.lwd.uidemo">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:name=".MyApplication"
@@ -12,7 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.UIDemo">
-        <activity android:name=".cardslide.CardSlideActivity"></activity>
+        <activity android:name=".text.ColorChangeTextViewActivity"></activity>
+        <activity android:name=".cardslide.CardSlideActivity" />
         <activity android:name=".stickyheader.StickyHeaderActivity" />
         <activity android:name=".fish.FishActivity" />
         <activity android:name=".nested.NestedActivity" />
